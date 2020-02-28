@@ -16,4 +16,5 @@ if [ ! -d "$DFL_WORKSPACE" ]; then
     mkdir "$DFL_WORKSPACE/model"
 fi
 
-export DFL_SRC="./"
+export DFL_ROOT="./"
+export DFL_SRC="./DeepFaceLab"
