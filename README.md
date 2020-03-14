@@ -12,7 +12,11 @@ conda init bash
 # Restart your shell
 ```
 
-### 2. Install DeepFaceLab
+### 2. Install System Dependencies 
+
+You will need FFMpeg, Git, and the most recent NVIDIA driver for your system to use this project.
+
+### 3. Install DeepFaceLab
 
 You will now need to create the DeepFaceLab environment with the following libraries. After creating the environment, you can activate it to work within the environment. You will not typically need to activate the environment when using this fork, as the scripts will automatically set it for you. If you want to change the name and other behavior, alter env.sh found in the scripts directory.
 
@@ -27,7 +31,7 @@ git clone https://github.com/iperov/DeepFaceLab.git
 python -m pip install -r ./DeepFaceLab/requirements-cuda.txt
 ```
 
-## 3. Download CelebA Dataset
+## 4. Download CelebA Dataset
 
 Finally, you will need to use the provided datasets required for DeepFaceLab training. 
 
@@ -35,5 +39,5 @@ Finally, you will need to use the provided datasets required for DeepFaceLab tra
 2. Extract the build and go into the _internal folder. ``7z x DeepFaceLab_NVIDIA_build_XX_XX_XXX.exe``
 3. Copy both pretrain_CelebA and pretrain_Quick96 to the directory DeepFaceLab_Linux/
 
-## 4. Navigate to the scripts directory and begin using DeepFaceLab_Linux :)
+## 5. Navigate to the scripts directory and begin using DeepFaceLab_Linux :)
 
